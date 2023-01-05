@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <meta name="title" />
+    <meta name="description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+  </head>
+
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#hero" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#project" class="navbar-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:ayasyinsanaulia@gmail.com" class="contact-link"
+              >ayasyinsanaulia@gmail.com</a
+            >
+
+            <a href="tel:089635177334" class="contact-link">089635177334</a>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://github.com/yase08"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ayasyinsanaulia_/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ayasy-insan-aulia-16968b227/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="section hero" aria-label="home" id="hero">
+          <div class="container">
+            <figure class="hero-banner">
+              <img
+                src="assets/images/me.jpg"
+                width="360"
+                height="340"
+                class="w-100"
+                data-reveal="top"
+              />
+            </figure>
+
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+                data-reveal="top"
+                data-reveal-delay="0.5s"
+              >
+                Back-End Developer.
+              </h1>
+
+              <p
+                class="section-text"
+                data-reveal="top"
+                data-reveal-delay="0.75s"
+              >
+                Hello my name is Ayasy Insan Aulia
+              </p>
+
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="#project" class="btn btn-primary">See My Works</a>
+
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about" aria-label="about" id="about">
+          <div class="container">
+            <div class="wrapper">
+              <div data-reveal="left">
+                <h2 class="h2 section-title">About Me</h2>
+
+                <p class="section-text">
+                  I'm currently on my way Education at SMK Wikrama Bogor
+                  development competency software and games. I am consistent
+                  personality, diligent, honest, Disciplined and able to work in
+                  a team.
+                </p>
+              </div>
+
+              <ul class="progress-list" data-reveal="right">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>CSS</p>
+
+                    <span class="span">65 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 65%; background-color: #c7b1dd"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>PHP</p>
+
+                    <span class="span">70 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 70%; background-color: #8caeec"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Laravel</p>
+
+                    <span class="span">80 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 80%; background-color: #b0d4c1"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Javascript</p>
+
+                    <span class="span">50 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 50%; background-color: #e3a6b6"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section project" aria-labelledby="project-label" id="project">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">
+                  Latest Projects
+                </h2>
+
+                <p class="section-text">
+                  Check out some of my latest projects.
+                </p>
+              </div>
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div
+                  class="project-card project-card-1"
+                  style="background-color: #1f1f1f"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <h3 class="h3 card-title">PPDB Wikrama</h3>
+
+                    <p class="card-text">
+                      website that functions to manage the registration of new
+                      students
+                    </p>
+
+                    <a href="https://github.com/yase08/website-ppdb" class="btn-text" style="color: #a07cc5" target="_blank">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/ppdb.png"
+                      width="650"
+                      height="370"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-2"
+                  style="background-color: #1f1f1f"
+                >
+                  <div class="card-content" data-reveal="right">
+                    <h3 class="h3 card-title">Website Ekstrakurikuler</h3>
+
+                    <p class="card-text">
+                      website that functions to manage extracurricular
+                      activities
+                    </p>
+
+                    <a href="https://github.com/yase08/website-ekskul" class="btn-text" style="color: #3f78e0" target="_blank">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="left">
+                    <img
+                      src="./assets/images/ekskul.png"
+                      width="600"
+                      height="367"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section contact" aria-label="contact" id="contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content" data-reveal="left">
+
+                <h2 class="h2 section-title">Let's Get In Touch!</h2>
+
+                <p class="section-text">
+                  I bring rapid solutions to make the life of my clients easier.
+                  Have any questions? Reach out to me from this contact form and
+                  I will get back to you shortly.
+                </p>
+              </div>
+
+              <form action="" class="contact-form" data-reveal="right">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name *"
+                    required
+                    class="input-field"
+                  />
+
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Email *"
+                    required
+                    class="input-field"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message *"
+                  required
+                  class="input-field"
+                ></textarea>
+
+                <button type="submit" class="btn btn-secondary">
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">© 2022 Ayasy Insan Aulia. All rights reserved.</p>
+
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://github.com/yase08"
+              class="social-link"
+              target="_blank"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/ayasyinsanaulia_/"
+              class="social-link"
+              target="_blank"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ayasy-insan-aulia-16968b227/"
+              class="social-link"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
